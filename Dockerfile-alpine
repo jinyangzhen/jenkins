@@ -13,7 +13,4 @@ USER root
 RUN apk add --no-cache docker \
     libffi-dev \
     openssl-dev 
-RUN mkdir /var/jenkins_data
-RUN chmod jenkins:jenkins /var/jenkins_data
-RUN ln -s /var/jenkins_home/workspace /var/jenkins_data/workspace
 USER jenkins
